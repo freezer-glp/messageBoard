@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+ 
+<html> 
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=gbk" /> 
+	<title>管理员登陆</title> 
+	<style type="text/css"> 
+	.pic{
+	border:1px solid black;
+	float:left;
+	z-index:2;
+	}
+	.tile{
+	border:1px solid black;
+	}
+	.box{
+	margin:20px auto;
+	padding:0px;
+	border:1px solid black;
+	width:220px;
+	height:125px;
+	
+	
+	}
+	a{
+	text-decoration:none
+	}
+	a:hover{
+	color:red;
+	}
+	</style> 
+	<script language="javascript">
+	function juge(form)
+	{
+		if(form.username.value == "")
+		{
+			alert("please input the username!")
+			theForm.username.focus();
+			return (false);
+		}
+
+		if(form.password.value == "")
+		{
+			alert("please input the password!")
+			theForm.password.focus();
+			return (false);
+		}
+	}
+	</script>
+</head> 
+ 
+<body bgcolor="#EEF3F7"  > 
+
+
+<div class="box">
+	<form name="login" method="post" action="login.php" onsubmit="return juge(this)">
+	<table border="1"  >
+<!--
+		<tr>
+			<td colspan="2" align="center"><img src="login.jpg" width="300px"></td>
+		</tr>
+		-->
+		<tr>
+			<td colspan="2" align="center">管理员登陆</td>
+		</tr>
+		<tr>
+			<td>用户名</td><td><input type="text" name="username" value="--请输入用户名--"></td>
+		</tr>
+		<tr>
+			<td>密&nbsp&nbsp码</td><td><input type="password" name="password" size="21"></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type="submit" value="提交">&nbsp&nbsp&nbsp<input type="reset" value="重填"></td>
+		</tr>
+	</table>
+	</form>
+</div>
+
+	 
+</body> 
+</html>

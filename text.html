@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+	<title>请输入留言</title>
+	<style type="text/css">
+	.text{
+	margin:50px auto;
+	padding:0px;
+	border:1px solid black;
+	width:287px;
+	}
+	a{
+	text-decoration:none
+	}
+	a:hover{
+	color:red;
+	}
+	</style>
+</head>
+
+<body bgcolor="#EEF3F7"  >
+	<div class="text">
+		<form action="text.php" name="text" method="post">
+			<table border="1">
+				<tr><td colspan="2" align="center">请输入留言内容</td></tr>
+				
+				<tr><td align="center">昵&nbsp&nbsp称</td><td><input type="text" name="name" ></td></tr>
+				
+				<tr><td align="center">主&nbsp&nbsp题</td><td><input type="text" name="main_ideal" ></td></tr>
+				
+				<tr><td colspan="2"><textarea name="content" cols="36" rows="8"></textarea>
+				</td></tr>
+				
+				<tr><td colspan="2" align="center">
+				<input type="submit" name="Submit" value="提交">
+				<input type="reset" name="Reset" value="重填">
+				<input type="button" value="返回" name="getback" onclick="window.location.href('show.php')">
+				</td></tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
